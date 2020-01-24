@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    <div class="master-div-style">
+    <div class="main">
       <div class="title">
       <h1 id="title">Decrypting Cryptocurrency</h1>
       <p id="description">Tell us how we can make cryptocurrency accessible for you.</p>
@@ -15,32 +15,23 @@
 
       <div class="content">
         <form id="survey-form" action="/do-something">
-
-          <div class="labels">
+          <div class="form-element">
             <label for="name" id="name-label">Name</label>
-          </div>
-          <div class="fields">
-            <input type="text" id="name" class="input-fields" placeholder="Enter your name" required>
+            <input type="text" id="name" class="input-field" placeholder="Enter your name" required>
           </div>
 
-          <div class="labels">
+          <div class="form-element">
             <label for="email" id="email-label">Email</label>
-          </div>
-          <div class="fields">
-            <input type="email" id="email" class="input-fields" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" placeholder="Enter your email address" required>
+            <input type="email" id="email" class="input-field" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" placeholder="Enter your email address" required>
           </div>
 
-          <div class="labels">
+          <div class="form-element">
             <label for="number" id="number-label">Age</label>
-          </div>
-          <div class="fields">
-            <input type="number" id="number" class="input-fields" placeholder="Enter your age" min="10" max="100" required>
+            <input type="number" id="number" class="input-field" placeholder="Enter your age" min="10" max="100" required>
           </div>
 
-          <div class="labels">
-            <label for="dropdown" id="dropdown-label">Country of residency</label>
-          </div>
-          <div class="fields">
+          <div class="form-element">
+            <label for="dropdown" id="dropdown-label">Country of residence</label>
             <select name="Country" id="dropdown" class="dropdown" data_placeholder="Select" required>
                 <option value="" disabled selected>Select your country</option>
                 <option value="Afghanistan">Afghanistan</option>
@@ -290,95 +281,67 @@
             </select>
           </div>
 
-          <div class="labels">
+          <div class="form-element">
             <label for="familiarity">What is your level of familiarity with crypto currency?</label>
-          </div>
-          <div class="fields">
             <ul id="level-of-familiarity" style="list-style: none;">
               <li class="radio">
-                <label>
-                  Novice
-                  <input name="time-radio" type="radio" value="1" class="user-selection">
-                </label>
+                <label>Novice</label>
+                <input name="time-radio" type="radio" value="1" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  Beginner
-                  <input name="time-radio" type="radio" value="2" class="user-selection">
-                </label>
+                <label>Beginner</label>
+                <input name="time-radio" type="radio" value="2" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  Intermediate
-                  <input name="time-radio" type="radio" value="3" class="user-selection">
-                </label>
+                <label>Intermediate</label>
+                <input name="time-radio" type="radio" value="3" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  Expert
-                  <input name="time-radio" type="radio" value="4" class="user-selection">
-                </label>
+                <label>Expert</label>
+                <input name="time-radio" type="radio" value="4" class="user-selection">
               </li>
             </ul>
           </div>
 
-          <div class="labels">
+          <div class="form-element">
             <label for="involvement">
               How would you like to get involved with crypto currency?
               <br>
               (Select all that apply)
             </label>
-          </div>
-
-          <div class="fields">
             <ul id="involvement" style="list-style: none;">
               <li class="radio">
-                <label>
-                  <input name="event" value="1" type="checkbox" class="user-selection">
-                  Informal get-together
-                </label>
+                <label>Informal get-together</label>
+                <input name="event" value="1" type="checkbox" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  <input name="event" value="2" type="checkbox" class="user-selection">
-                  Meetup
-                </label>
+                <label>Meetup</label>
+                <input name="event" value="2" type="checkbox" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  <input name="event" value="3" type="checkbox" class="user-selection">
-                  Hackathon
-                </label>
+                <label>Hackathon</label>
+                <input name="event" value="3" type="checkbox" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  <input name="event" value="4" type="checkbox" class="user-selection">
-                  Conference
-                </label>
+                <label>Conference</label>
+                <input name="event" value="4" type="checkbox" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  <input name="event" value="5" type="checkbox" class="user-selection">
-                  Bussiness development
-                </label>
+                <label>Business development</label>
+                <input name="event" value="5" type="checkbox" class="user-selection">
               </li>
               <li class="radio">
-                <label>
-                  <input name="event" value="6" type="checkbox" class="user-selection">
-                  Other (specify in comments)
-                </label>
+                <label>Other (specify in comments)</label>
+                <input name="event" value="6" type="checkbox" class="user-selection">
               </li>
             </ul>
           </div>
 
-          <div class="labels">
-            <label for="event-details">
-              Comments or suggestions
-            </label>
+          <div class="form-element">
+            <label for="event-details">Comments or suggestions</label>
+            <textarea id="event-details" class="input-field" name="event-details" cols="1" rows="1" placeholder="Enter your comments or suggestions here..."></textarea>
           </div>
-          <div class="fields">
-            <textarea id="event-details" class="input-fields" name="event-details" cols="1" rows="1" placeholder="Enter your comments or suggestions here..."></textarea>
-          </div>
+
           <button class="button" id="submit" type="submit">Submit</button>
         </form>
       </div>

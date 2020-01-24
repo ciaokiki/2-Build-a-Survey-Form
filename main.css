@@ -11,14 +11,12 @@ body {
 
 h1 {
     font-size: 46px;
-    font-family: 'CMUSerifRoman';
     font-weight: normal;
     font-style: normal;
 }
 
 p {
     font-size: 22px;
-    font-family: 'CMUSerifRoman';
     font-weight: normal;
     font-style: normal;
 }
@@ -27,13 +25,13 @@ select:invalid {
     color: gray;
 }
 
-.title {
-    text-align: center;
-    padding-bottom:30px;
-}
-
 .text-center {
     text-align: center;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 30px;
 }
 
 .content {
@@ -41,7 +39,7 @@ select:invalid {
     margin: auto;
 }
 
-.master-div-style {
+.main {
     width: 80%;
     background-color: #05050565;
     border-radius: 10px;
@@ -49,17 +47,12 @@ select:invalid {
     padding: 50px;
 }
 
-.fields {
+.form-element {
     position: relative;
     display: block;
 }
 
-.labels {
-    position: relative;
-    display: block;
-}
-
-.input-fields {
+.input-field {
     height: 30px;
     width: 100%;
     padding: 5px;
